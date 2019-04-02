@@ -74,7 +74,8 @@ class TSVLogger():
    
 def main():
     job_id = int(os.environ['JOB_ID'])
-    DATA_DIR = '/datasets/cifar10-data'
+#    DATA_DIR = '/datasets/cifar10-data'
+    DATA_DIR = '/datasets/cifar-10-batches-py'
 
     #print('Downloading datasets')
     train_set_raw = torchvision.datasets.CIFAR10(root=DATA_DIR, train=True, download=False)
